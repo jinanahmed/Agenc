@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+
+
+.navbar{
+    padding-top: 35px;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+.scrollbar{
+    background: #fff;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: fixed;
+    animation: scrolldown 0.8s;
+}
+@keyframes scrolldown {
+    from{
+        top: -100px;
+        background: #a5a5a5;
+    }
+    to{
+        top: 0;
+    }
+}
+.scrollbar .nav-link{
+    color: #000;
+}
+.scrollbar .navbar-brand{
+    visibility: hidden;
+}
+.scrollbar .navbutton{
+    visibility: hidden;
+}
+.nav-link{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+.navbutton{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+    background: #6A4DF4;
+    border: none;
+    padding: 15px 42px;
+    border-radius: 10px;
+}
+.nav-link:hover{
+    color: #4756DF;
+    font-weight: 700;
+}
+.scrolltopbutton{
+    height: 70px;
+    width: 70px;
+    background: #00c9b8;
+    position: fixed;
+    z-index: 999999;
+    border-radius: 50pc;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+.scrolltopbutton i{
+    font-size: 30px;
+    line-height: 70px;
+}
+html, body{
+    scroll-behavior: unset !important;
+}
+#banner{
+    padding-top: 280px;
+    padding-bottom: 100px;
+    background: url(../images/agenc-Banner\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+}
+#banner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.headerdiv{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    text-align: center;
+    color: #fff;
+}
+.bannertext p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+.bannerbutton{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    background: #6A4DF4;
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+#success{
+    padding: 150px 0;
+}
+.successdiv{
+    padding: 85px 50px;
+    background: #E0FFF9;
+    border-radius: 20px;
+    display: flex;
+}
+.successtext{
+    width: 40%;
+}
+.successtext p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #6A4DF4;
+}
+.successtext h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: #151515;
+}
+.counterdiv{
+    justify-content: space-between;
+    width: 60%;
+    display: flex;
+}
+.countertexts{
+    width: 30%;
+}
+.countertexts h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #151515;
+}
+.countertexts p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #737373;
+}
+#services{
+    padding-bottom: 50px;
+}
+.titleplace h3{
+    font-family: 'Inter', sans-serif;     
+    font-weight: 700;
+    font-size: 45px;
+    color: #151515;
+    text-transform: capitalize;
+}
+.titleplace p{
+    font-family: 'Inter', sans-serif;      
+    font-weight: 400;
+    font-size: 16px;
+    color: #737373;
+}
+.servicecard{
+    text-align: center;
+    width: 100%;
+    padding: 80px 49px 47px 49px;
+    background: #ffffff;
+    border-radius: 20px;
+    transition: all linear 0.1s;
+}
+.servicecard img{
+    padding-bottom: 30px;
+}
+.servicecard p{
+    padding-bottom: 20px;    
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+.servicecard h3{
+    padding-bottom: 20px;    
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+}
+.servicecard:hover{
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+#works{
+    padding: 150px 0;
+    background: #F3F3F3;
+}
+.workdiv{
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.workdiv img{
+    width: 100%;
+}
+.worktext{
+    padding: 30px 30px;
+    text-align: center;
+}
+.worktext h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.worktext p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+#traits{
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+.chooseimg img{
+    width: 100%;
+}
+.featurediv h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+.featurediv p{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#reviews{
+    padding: 50px 0;
+}
+.revdiv{
+    width: 100%;
+    padding: 40px 50px 40px 50px;
+    background: #ffffff;
+    border-radius: 30px;
+}
+.reviewslider{
+    position: relative;
+}
+.reviewslider .slick-center .revdiv{
+    background: #F4EFEF;
+}
+.left{
+    height: 40px;
+    width: 40px;
+    background: #4756DF;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    text-align: center;
+    z-index: 999;
+    border-radius: 50%;
+}
+.right{
+    height: 40px;
+    width: 40px;
+    background: #4756DF;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    text-align: center;
+    z-index: 999;
+    border-radius: 50%;
+}
+.quotesign{
+    font-size: 40px;
+    color: #6A4DF41A;
+}
+.revdiv p{
+    padding-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.stars i{
+    color: #F9BD2C;
+}
+.revname{
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+}
+.revnametext{
+    margin-left: 10px;
+}
+.revnametext h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.revnametext p{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    text-transform: capitalize;
+}
+#quote{
+    padding: 100px 0;
+    background: #F3F3F3;
+}
+.quotetxt h3{
+    font-weight: 700;
+    font-size: 45px;
+}
+.quotetxt p{
+    font-weight: 400;
+    font-size: 16px;
+}
+.quoteform{
+    width: 100%;
+    background: #ffffff;
+    padding: 50px 30px 50px 30px;
+    border-radius: 20px;
+}
+.quoteform h3{
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+.quote p{
+    margin-bottom: 5px !important;
+    margin-top: 20px;
+}
+.quote input{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+    width: 100%;
+}
+.quote input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    color: #D0D0D0;
+}
+.quote input::-webkit-outer-spin-button,
+.quote input::-webkit-inner-spin-button{
+    display: none;
+}
+.quote button{
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    background: #6A4DF4;
+    border: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 19px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#footer{
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+.footerlogo p{
+    color: #7B7B7B;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.footerdivs h3 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.footerdivs p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #7B7B7B;
+    text-transform: capitalize;
+}
+.copyrightdiv{
+    padding: 25px 0;
+    border-top: 1px solid #E8E8E8;
+}
+.copyrightdiv p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #D0D0D0;
+}
